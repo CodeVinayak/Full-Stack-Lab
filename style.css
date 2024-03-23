@@ -1,0 +1,449 @@
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .favjourney{
+    color: #338bff;
+  }
+  .submitandreset{
+    text-align: center;
+  }
+  .borderdedo{
+    border: 1px solid black;
+  }
+  
+.menu_container ul{
+  display: flex;
+  gap: 2rem;
+  /* align-items: center; */
+  justify-content: end;
+  padding: 0 20px 0 20px;
+  list-style: none;
+  color: black;
+    font-weight: bold;
+}
+.menu_container li{
+  position: relative;
+  color: black;
+}
+
+
+.menu_container li::after{
+  content: " ";
+  width: 10px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: -15px;
+}
+  .planquick{
+    text-align: center;
+  }
+  .submitandresetnew{
+    padding: 5px 10px; 
+    background: rgb(255,255,255);
+    background: linear-gradient(132deg, rgba(255,255,255,1) 0%, rgba(0,212,255,0.32816876750700286) 100%);
+  }
+  .Train{
+    text-align:left;
+  }
+ .custom-table ,tr{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    width: 70%;
+  }
+  .redcolorkaro{
+    color: red;
+  }
+  .Trainth{
+    background-color: 489bca;
+  }
+  .Trainthwhite{
+    background-color: 489bca;
+    color: white;
+  }
+  .leftkaro{
+    text-align: left;
+  }
+  th{
+    /* text-align:left; */
+    background-color:#e2edfc;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  .highlight-row{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .highlight-row-down{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .customhfour{
+    margin: 0px;
+
+  }
+  .customhfive{
+    margin: 0px;
+  }
+  .customhfiveblue{
+    margin: 0px;
+    color: #489bca;
+  }
+  .quota{
+
+  }
+
+  .title{
+    text-align: center;
+  }
+.jouneyDetails{
+  /* border: 1px solid black; */
+  width: 70%;
+  margin: auto;
+  background-color: #579bcf;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+
+.details-content{
+  /* border: 1px solid black; */
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+
+
+.PassengerDetailsTable {
+  border-collapse: collapse;
+  width: 70%;
+  border: 1px solid black;
+}
+
+.PassengerDetailsTable th, .PassengerDetailsTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+
+.resetpass{
+  background-color: #cccccc;
+}
+
+.resetpass  button{
+  background-color: #cddefc;
+  border: none;
+  padding: 5px 10px;
+}
+
+.children-below span{
+  color: darkred;
+  font-weight: bold;
+}
+
+.row{
+  /* border: 1px solid black; */
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+
+.row1-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+
+.other-container{
+  border: 1px solid black;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.other-container-row1{
+  display: flex;
+  gap: 2rem;
+  margin-top: 30px;
+
+}
+.row1-container {
+  display: flex;
+  width: 50%;
+  background-color:#f6f6f6 ;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.row1-container div{
+  display: flex;
+  gap: 1rem;
+  color: #579bcf;
+}
+
+.row1-container .para{
+  color: #b6008c;
+}
+
+.other-container-row2{
+
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
+}
+
+.row3-container img{
+  width: 150px;
+}
+
+
+.row3-container{
+  display: flex;
+  /* border: 1px solid black; */
+  width: 50%;
+  background-color:#f6f6f6 ;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.row4-container{
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.row4-container span{
+  color: red;
+}
+.marginzero{
+  margin: 0px;;
+}
+.nextandreplanbutton{
+    background-color: #cddefc;
+
+}
+.pinkkaro{
+  color: #b6008c;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+.captchawala{
+  margin-left: -110px;
+}
+.payment-option-container{
+  width: 70%;
+  margin: auto;
+  padding-inline: 1rem;
+}
+
+
+.payment-option-heading{
+  background-color: #579bcf;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.payment-label{
+  color: #338bff;
+}
+
+
+.payment-mode{
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-input{
+  display: flex;
+  /* border: 1px solid black; */
+  /* width: 80%; */
+  gap: 2rem;
+  margin-top:-15px;
+  /* align-items: center; */
+}
+
+.payment-input-container{
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #338bff;
+}
+
+
+.select-bank-container{
+  color: #338bff;
+  display: flex;
+  gap: 6.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.select-bank-container select{
+  width: 100px;
+}
+
+
+.payment-gateway-button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.payment-gateway-button button{
+  padding: 5px 10px;
+  background-color: #cddefc;
+  border: none;
+}
+
+.availibilty-details{
+  margin-top: 100px;
+  border: 1px solid black;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.avail-wrapper1{
+  width: 50%;
+  padding: 10px;
+}
+
+.avail-wrapper1-heading{
+  background-color: #579bcf;
+  padding: 5px 10px;
+  font-weight: bold;
+  align-items:self-start;
+  text-align:left;
+}
+
+.availibilty-details-note{
+  width: 70%;
+  margin: auto;
+  margin-block: 0.5rem;
+  color: #b6008c;
+}
+.ticket-details-notice{
+  width: 70%;
+  margin: auto;
+  color: #338bff;
+  font-weight: bold;
+  text-align: left;
+  font-size: small;
+}
+
+.ticket-details-container{
+  width: 70%;
+  margin: auto;
+  border: 1px solid #75d3fd;
+  padding: 2px;
+}
+
+.ticket-details-heading{
+  background-color: #579bcf;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.ticket-details-content{
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: auto ;
+}
+
+
+
+.ticket-details-container-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+
+.ticket-details-container-col span{
+  font-weight: bold;
+}
+
+
+.Details-of-passenger-container{
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+  padding: 2px;
+  margin-bottom: 30px;
+}
+
+.details-of-passenger-heading{
+  background-color: #579bcf;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+
+.Details-of-passenger-container table{
+  width: 95%;
+  margin-bottom: 2rem;
+}
+
+.Details-of-passenger-container table tr th{
+  background-color: #579bcf;
+  height: 50px;
+
+}
+
+.print-button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.print-button button{
+  padding: 5px 15px ;
+  background-color: #579bcf;
+  border: none;
+}
+
+
+.Book-another-ticket{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Book-another-ticket button{
+  padding: 5px 15px ;
+  background-color: #75d3fd;
+  border: none;
+}
