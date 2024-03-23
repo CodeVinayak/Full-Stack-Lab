@@ -1,0 +1,1173 @@
+<html>
+<head>
+  <title>Book E-Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <table width="100%" cellpadding="1" cellspacing="0" border="0">
+      <tr>
+        <td width="60%" colspan="2" valign="top">
+          <img src="irctc_logo.gif" style=" border-top-left-radius: 15px;
+       -moz-border-radius-toprleft: 15px;" />
+        </td>
+        <td width="10%" colspan="6" valign="bottom" align="center">
+        </td>
+        <td width="30%" align="right" valign="top">
+          <img src="CRIS-Full.png" style="border-top-right-radius: 15px; -moz-border-radius-toprleft: 15px;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="menu_container">
+    <ul>
+      <li>Home</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <h3>E-Ticket</h3>
+  <ul>
+    <li>Register as an individual. Registration is FREE.</li>
+    <li>Login by entering your user name and password.</li>
+    <li>The <b>"</b>Plan my travel<b>"</b> page appears.</li>
+    <li>
+      If the From/To station selected by you are correct in the route of the
+      train then :
+    </li>
+    <li>Select e-Ticket option.</li>
+  </ul>
+  <center>
+    <table border-radius: 10px; class="borderdedo">
+      <tr>
+        <td class="planquick">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            type="button" class="submitandresetnew">Plan My Journey</button>
+          <button type="button" class="submitandresetnew">Quick Book</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="favjourney">Select Favourite Journey List</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="From">From Station:</label>
+        </td>
+        <td>
+          <input type="text" id="From" name="From" value="NEW DELHI - NDLS" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="To">To Station:</label>
+        </td>
+        <td>
+          <input type="text" id="To" name="To" value="MUMBAI CENTRAL - BTC">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="JourneyDate">Journey Date:</label>
+        </td>
+        <td>
+          <input type="date" id="JourneyDate" name="JourneyDate" value="2014-01-30" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="TicketType">Ticket Type:</label>
+        </td>
+        <td>
+          <select name="TicketType" id="TicketType">
+            <option value="volvo">E-Ticket</option>
+            <option value="saab">Physical Tickets</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="Passengerstype" name="Passengerstype" value="Passengerstype">
+          <label for="Passengerstype" class="favjourney"> <b>I have Handicap Passengers</b></label><br>
+        </td>
+      </tr>
+      <tr>
+        <td class="submitandreset">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+            type="button" class="submitandresetnew">Submit</button>
+          <button type="button" class="submitandresetnew">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </center>
+  <ul>
+    <li>To find train list, click on "Submit" option.</li>
+    <li>
+      The List of Trains show the number of trains available for that route.
+    </li>
+    <li>
+      If you wish to know the route and the timings, click on the train
+      nameunder the "List of Trains" option.
+    </li>
+    <li>
+      To get the fare, click on class available in the selected train under
+      "List of Trains". It will show fare according to type of class
+      selected.The fare appearing is for a single adult Passenger and the
+      service charges charged by IRCTC.
+    </li>
+    <li>
+      To select the train from the train list, click on the type of class
+      available in the selected train.
+    </li>
+    <li>
+      If you will click on the class in the train list then it will show the
+      train details with availability.
+    </li>
+    <li>
+      To book tickets, click on "Book Now" button under availability option.
+    </li>
+    <li>If you wish to select other train, click on "RESET" button.</li>
+  </ul>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">Train Between Stations</th>
+    </table>
+  </center>
+  <table class="Quota">
+    <td>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select
+      Quota :</td>
+    <td><input type="radio" name="accessibility" value="general" checked /> GENERAL</td>
+    <td><input type="radio" name="accessibility" value="physically_handicap" /> PHYSICALLY HANDICAP</td>
+    <td><input type="radio" name="accessibility" value="ladies_of_circle" /> LADIES</td>
+    <td class="redcolorkaro">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Click on a class to get Available and Fare*</p>
+    </td>
+  </table>
+  <center>
+    <table class="custom-table" ;>
+      <thead>
+        <tr>
+          <th>Train No.</th>
+          <th>Train Name</th>
+          <th>From</th>
+          <th>Departure <img src="toparrow.png" alt="booketicket2" width="auto" height="12" /></th>
+          <th>To</th>
+          <th>Arrival</th>
+          <th>Dist.(KM)</th>
+          <th>Travel Time</th>
+          <th>M</th>
+          <th>T</th>
+          <th>W</th>
+          <th>T</th>
+          <th>F</th>
+          <th>S</th>
+          <th>S</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="highlight-row">12904</td>
+          <td class="highlight-row">GOLDN TEMPLE ML</td>
+          <td class="highlight-row">NZM</td>
+          <td class="highlight-row">7:40</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">5:20</td>
+          <td class="highlight-row">1377</td>
+          <td class="highlight-row">21.40</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">1A 2A 3A SL</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">02264</td>
+          <td class="highlight-row">DYANAMIC FARE EX</td>
+          <td class="highlight-row">NZM</td>
+          <td class="highlight-row">11:00</td>
+          <td class="highlight-row">KYN</td>
+          <td class="highlight-row">4:00</td>
+          <td class="highlight-row">1382</td>
+          <td class="highlight-row">17.40</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">12248</td>
+          <td class="highlight-row">NZM BOTS YUVA</td>
+          <td class="highlight-row">NZM</td>
+          <td class="highlight-row">15:40</td>
+          <td class="highlight-row">BDTS</td>
+          <td class="highlight-row">9:20</td>
+          <td class="highlight-row">1366</td>
+          <td class="highlight-row">17:40</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">1A 2A 3A CC</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">22913</td>
+          <td class="highlight-row">DYNAMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">16:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">8:35</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:05</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">02952</td>
+          <td class="highlight-row">DYNAMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">16:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">8:35</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:05</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">12952</td>
+          <td class="highlight-row">MUMBAI RAJDHANI</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">16:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">8:35</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:05</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">1A 2A 3A</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">12954</td>
+          <td class="highlight-row">AG KRANTI RJDHN</td>
+          <td class="highlight-row">NZM</td>
+          <td class="highlight-row">16:55</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">10:00</td>
+          <td class="highlight-row">1377</td>
+          <td class="highlight-row">17:05</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">1A 2A 3A</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">19020</td>
+          <td class="highlight-row">DEHRADUN EXP</td>
+          <td class="highlight-row">NZM</td>
+          <td class="highlight-row">21.55</td>
+          <td class="highlight-row">BDTS</td>
+          <td class="highlight-row">04:20</td>
+          <td class="highlight-row">1366</td>
+          <td class="highlight-row">30:25</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A SL</td>
+        </tr>
+        <tr>
+          <td class="highlight-row">22914</td>
+          <td class="highlight-row">DYANMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">23:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">16:15</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:45</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">N</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+        <tr>
+          <td class="highlight-row">02210</td>
+          <td class="highlight-row">DYANMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">23:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">16:15</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:45</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+        <tr>
+          <td class="highlight-row">02222</td>
+          <td class="highlight-row">DYANMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">23:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">16:15</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:45</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+        <tr>
+          <td class="highlight-row">02224</td>
+          <td class="highlight-row">DYANMIC FARE</td>
+          <td class="highlight-row">NDLS</td>
+          <td class="highlight-row">23:30</td>
+          <td class="highlight-row">BCT</td>
+          <td class="highlight-row">16:15</td>
+          <td class="highlight-row">1384</td>
+          <td class="highlight-row">16:45</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">Y</td>
+          <td class="highlight-row">2A 3A</td>
+        </tr>
+        <tr>
+      </tbody>
+  </center>
+  <table class="custom-table" ;>
+    <thead>
+      <br>
+      <tr>
+        <th>Availability Train Number:12952, Class:3A, Quota:GN</th>
+      </tr>
+      <table class="custom-table" ;>
+        <thead>
+          <br>
+          <tr>
+            <th class="Trainthwhite">Date</th>
+            <th class="Trainthwhite">30-01-2014</th>
+            <th class="Trainthwhite">31-1-2014</th>
+            <th class="Trainthwhite">1-2-2014</th>
+            <th class="Trainthwhite">2-2-2014</th>
+            <th class="Trainthwhite">3-2-2014</th>
+            <th class="Trainthwhite">4-2-2014</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight-row">
+              <h4>Availability</h4>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0441</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0439</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0441</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0445</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0445</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+            <td class="highlight-row-down">
+              <H5 class="customhfive">AVAILABLE-0445</H5>
+              <p class="customhfiveblue">Book Now</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class="custom-table" ;>
+        <thead>
+          <tr>
+            <th>Fare Train Number:12952, Class:3A</th>
+          </tr>
+        </thead>
+      </table>
+      <br>
+      <table class="custom-table" ;>
+        <thead>
+          <tr>
+            <th class="Trainthwhite">Base Fare</th>
+            <th class="Trainthwhite">Reservation Charges</th>
+            <th class="Trainthwhite">Suferfast Charges</th>
+            <th class="Trainthwhite">Other Charges</th>
+            <th class="Trainthwhite">Taktal Charges</th>
+            <th class="Trainthwhite">Service Charges</th>
+            <th class="Trainthwhite">Catering Charges #</th>
+            <th class="Trainthwhite">Total Charges</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">1419</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">40</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">45</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">0</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">0</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">56</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">255</h4>
+            </td>
+            <td class="highlight-row-down">
+              <h4 class="customhfour">1815</h4>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="redcolorkaro">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>#
+          Catering charges inclusive of Service Tax</b></p>
+  </table>
+  <center>
+    <table class="Train">
+      <br>
+      <th width="835" class="Trainth">Train Between Stations</th>
+    </table>
+  </center>
+
+  <table class="Quota">
+    <td>
+      Select Quota :</td>
+    <td><input type="radio" name="accessibility" value="general" checked /> GENERAL</td>
+    <td><input type="radio" name="accessibility" value="physically_handicap" /> PHYSICALLY HANDICAP</td>
+    <td><input type="radio" name="accessibility" value="ladies_of_circle" /> LADIES</td>
+    <td class="redcolorkaro">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Click on a class to get Available and Fare*</b>
+      </p>
+    </td>
+  </table>
+
+  <table class="custom-table" ;>
+    <thead>
+      <tr>
+        <th>Train No.</th>
+        <th>Train Name</th>
+        <th>From</th>
+        <th>Departure <img src="toparrow.png" alt="booketicket2" width="auto" height="12" /></th>
+        <th>To</th>
+        <th>Arrival</th>
+        <th>Dist.(KM)</th>
+        <th>Travel Time</th>
+        <th>M</th>
+        <th>T</th>
+        <th>W</th>
+        <th>T</th>
+        <th>F</th>
+        <th>S</th>
+        <th>S</th>
+        <th>Class</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="highlight-row">12904</td>
+        <td class="highlight-row">GOLDN TEMPLE ML</td>
+        <td class="highlight-row">NZM</td>
+        <td class="highlight-row">7:40</td>
+        <td class="highlight-row">BCT</td>
+        <td class="highlight-row">5:20</td>
+        <td class="highlight-row">1377</td>
+        <td class="highlight-row">21.40</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">1A 2A 3A SL</td>
+      </tr>
+      <tr>
+        <td class="highlight-row">02264</td>
+        <td class="highlight-row">DYANAMIC FARE EX</td>
+        <td class="highlight-row">NZM</td>
+        <td class="highlight-row">11:00</td>
+        <td class="highlight-row">KYN</td>
+        <td class="highlight-row">4:00</td>
+        <td class="highlight-row">1382</td>
+        <td class="highlight-row">17.40</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">2A 3A</td>
+      </tr>
+      <tr>
+        <td class="highlight-row">12248</td>
+        <td class="highlight-row">NZM BOTS YUVA</td>
+        <td class="highlight-row">NZM</td>
+        <td class="highlight-row">15:40</td>
+        <td class="highlight-row">BDTS</td>
+        <td class="highlight-row">9:20</td>
+        <td class="highlight-row">1366</td>
+        <td class="highlight-row">17:40</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">Y</td>
+        <td class="highlight-row">1A 2A 3A CC</td>
+      </tr>
+    </tbody>
+  </table>
+  <UL class="leftkaro">
+    <LI>Ticket reservation page appears; check whether the train name and the station names displayed on the top of the
+      page are same as desired by you.</LI>
+    <LI>Enter the names of the Passengers, age, sex and berth preference for each Passenger. The maximum length of names
+      should be restricted to 15 characters. If the Passenger is a senior citizen (60 years and above for male and 58
+      years and above for female) and wants to avail Senior Citizens' concession (40% of Base fare for male and 50% of
+      base fare for female),
+      click the box provided. Senior citizens are requested to carry some proof of age in original during their journey.
+      A sample form is reproduced below. (The allotment of your required berth depends on the availability).</LI>
+  </UL>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">Journey Details</th>
+    </table>
+  </center>
+  <div class="details-content">
+    <div class="rownew">
+      <div class="row1-content">
+        <span class="title">Train no./name : </span>
+        <span>12952/MUMBAI RAJDHANI</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">From Station: </span>
+        <span>NEW DELHI - NDLS</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Boarding Station</span>
+        <span>NEW DELHI - NDLS</span>
+      </div>
+    </div>
+    <div class="rownew">
+      <div class="row1-content">
+        <span class="title">Journey date :</span>
+        <span>30-Jan-2014</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">To Station: </span>
+        <span>MUMBAI CENTRAL - BCT</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Reserv Upto stations : </span>
+        <span>MUMBAI CENTRAL - BCT</span>
+      </div>
+    </div>
+    <div class="rownew">
+      <div class="row2-content">
+        <span>Class: </span>
+        <span>Third AC</span>
+      </div>
+      <div class="row2-content">
+        <span>Quote: </span>
+        <span>GENERAL</span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">Passengers Details</th>
+    </table>
+  </center>
+  <br>
+  <Table class="PassengerDetailsTable">
+    <tr>
+      <th>SNo</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Berth preference</th>
+      <th>Meal</th>
+      <th>Senior</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><select>
+          <option value="M">M</option>
+          <option value="F">F</option>
+        </select></td>
+      <td> <select>
+          <option value="Lower">Lower</option>
+          <option value="Middle">Middle</option>
+          <option value="Upper">Upper</option>
+        </select></td>
+      <td><select>
+          <option value="Veg">Veg</option>
+          <option value="NON-VEG">Non-veg</option>
+        </select></td>
+      <td><input type="radio"></td>
+    </tr>
+    <tr>
+      <td class="resetpass" colspan="7">
+        <button type="reset">Reset passenger Details</button>
+      </td>
+    </tr>
+  </Table>
+  <br>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">
+        <p class="children-below"> Children below 5 years <span>(Ticket is Not to be Issued)</span></p>
+      </th>
+    </table>
+    <table class="PassengerDetailsTable">
+      <tr>
+        <th>SNo</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select>
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select>
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select>
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td class="resetpass" colspan="7">
+          <button type="reset">Reset Child Details</button>
+        </td>
+      </tr>
+    </table>
+    <div class="other-container">
+      <div class="other-container-wrapper">
+        <div class="other-container-row1">
+          <div class="row1-container">
+            <div>
+              <input type="checkbox">
+              <p class="marginzero">Consider for auto UpGradition</p>
+            </div>
+
+            <div>
+              <input type="checkbox">
+              <p class="marginzero">Book only if confirm berth are alloted</p>
+            </div>
+            <div>
+              <input type="radio" name="hello">
+              <p class="marginzero">None</p>
+            </div>
+            <div>
+              <input type="radio" name="hello">
+              <p class="marginzero">Book, only if all berths are alloted in same coach</p>
+            </div>
+            <div>
+              <input type="radio" name="hello">
+              <p class="marginzero">Book, only if at least 1 lower berth is alloted</p>
+            </div>
+            <div>
+              <input type="radio" name="hello">
+              <p class="marginzero">Book, only if 2 lower berth are alloted</p>
+            </div>
+
+          </div>
+          <div class="row1-container">
+            <p class="pinkkaro">Berth preference does not guarantee allotment of preferred berth type.</p><br>
+            <p class="pinkkaro">If you need assured Lower Berths or assured compact accommodation (in same coach),
+              please select one of the
+              options </p><br>
+            <p class="pinkkaro">If 'None' is selected, the berths will be allotted based on the system logic, depending
+              on availability at that point of time</p><br>
+            <p class="pinkkaro">This choice shall not be applicable in case confirmed accommodation is not available in
+              the train</p>
+            <br>
+          </div>
+        </div>
+        <div class="other-container-row2">
+          <div class="row3-container">
+            <img src="captcha.jpg">
+            <img src="refresh.jpg">
+            <div>
+              <input type="text" name="" id="" value="KmnYArC" class="captchawala">
+              <span>Case-sensitive</span>
+            </div>
+
+          </div>
+          <div class="row4-container">
+            <div>
+              <label for="">Mobile Number: </label>
+              <input type="text">
+            </div>
+            <span>SMS will be sent to this number</span>
+          </div>
+        </div>
+      </div>
+      <div class="warning">
+        <p class="pinkkaro">* If for any reason, the reservation output details are not displayed on your screen after
+          you have made payments,please check the details in 'Booked Tickets' under 'Booking History' in left navigation
+          bar. You may also check your mail for the details of your booking. You are also advised to contact Indian
+          Railways before trying to book your ticket again. </p>
+        <br>
+        <p class="pinkkaro">**The ID card will be required during journey. One of the passenger booked on an e-ticket
+          should have any of the nine identity cards(Vater Photo Identity Card / Passport /PAN Card/Driving License
+          issued by a RTO/ Photo Identity card issued by Central/State Govt/Student Photo Identity Card issued by
+          recognized School or College for their students/ Nationalized Bank Passbook with photograph/Credits Cards
+          issued by banks with laminated photograph/ Unique Identification Card 'Aadhaar') during train journey in
+          original. The identification details are required at the time of Tatkal booking.**</p>
+        <br>
+        <tr>
+          <button type="reset" class="nextandreplanbutton">Next</button>
+          </td>
+        </tr>
+        <tr>
+          <button type="reset" class="nextandreplanbutton">Replan</button>
+          </td>
+        </tr>
+        <br>
+      </div>
+      <br>
+    </div>
+  </center>
+  <ul class="leftkaro">
+    <li>The ticket details, availability of tickets at the particular time and the fare, including the service charge,
+      appear on the screen, along with the payment option Follow the instructions.</li>
+    <li>"Payment Option" Select the Payment Mode and Bank From the Drop Down List.</li>
+    <li> Click on the "Make Payment" It redirect to selected Bank Site.</li>
+  </ul>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">Journey Details</th>
+    </table>
+  </center>
+  <div class="details-content">
+    <div class="rownew">
+      <div class="row1-content">
+        <span class="title">Train no./name : </span>
+        <span>12952/MUMBAI RAJDHANI</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">From Station: </span>
+        <span>NEW DELHI - NDLS</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Boarding Station</span>
+        <span>NEW DELHI - NDLS</span>
+      </div>
+    </div>
+    <div class="rownew">
+      <div class="row1-content">
+        <span class="title">Journey date :</span>
+        <span>30-Jan-2014</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">To Station: </span>
+        <span>MUMBAI CENTRAL - BCT</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Reserv Upto stations : </span>
+        <span>MUMBAI CENTRAL - BCT</span>
+      </div>
+    </div>
+
+    <div class="rownew">
+      <div class="row2-content">
+        <span>Class: </span>
+        <span>Third AC</span>
+      </div>
+      <div class="row2-content">
+        <span>Quote: </span>
+        <span>GENERAL</span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <center>
+    <table class="Train">
+      <th width="835" class="Trainth">Passengers Details</th>
+    </table>
+  </center>
+  <center>
+    <table class="custom-table" ;>
+      <thead>
+        <tr>
+          <th>SI.No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Berth Preference</th>
+          <th>Meal</th>
+          <th>Senior?</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="highlight-row">1</td>
+          <td class="highlight-row">Ashish</td>
+          <td class="highlight-row">32</td>
+          <td class="highlight-row">Male</td>
+          <td class="highlight-row">LB</td>
+          <td class="highlight-row">Veg</td>
+          <td class="highlight-row">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <br>
+  <div class="availibilty-details | margin-block-sm">
+    <div class="avail-wrapper1">
+      <div class="avail-wrapper1-heading">Availability details</div>
+      <div class="row1-content">
+        <span class="title">Availability: </span>
+        <span>AVAILABLE-0441</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Availability At: </span>
+        <span>Fri Jan 24 15:48:23 IST 2014 IST</span>
+      </div>
+    </div>
+    <div class="avail-wrapper1">
+      <div class="avail-wrapper1-heading">Fare Details</div>
+      <div class="row1-content">
+        <span class="title">Ticket fare: </span>
+        <span>₹ 1815</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Services Charges: </span>
+        <span>₹ 22.47</span>
+      </div>
+      <div class="row1-content">
+        <span class="title">Total Fare: </span>
+        <span>₹ 1837.47</span>
+      </div>
+      <div class="row1-content">
+        <span><b>* Ticket fare includes Service Tax of ₹ 56</b></span>
+      </div>
+    </div>
+  </div>
+  <p class="availibilty-details-note"># This availability is for all berths, not for your preferred berth type. As
+    tickets are booked throughout the country across PRS counters, any confirmed status shown above may decline into
+    RAC/ Waiting List status, while your payment being processed.</p>
+  </div>
+  <div class="payment-option-container">
+    <div class="payment-option-heading">Payment Option</div>
+    <div class="payment-mode | margin_botton_sm">
+      <div class="payment-label">Payment Mode: </div>
+      <div class="payment-input">
+        <div class="payment-input-container">
+          <input type="radio">
+          <p>Internet Banking</p>
+        </div>
+        <div class="payment-input-container">
+          <input type="radio">
+          <p>Credit Card</p>
+        </div>
+        <div class="payment-input-container">
+          <input type="radio">
+          <p>Debit Card(Payment Gateway)</p>
+        </div>
+        <div class="payment-input-container">
+          <input type="radio">
+          <p>Cash Card</p>
+        </div>
+      </div>
+    </div>
+    <div class="select-bank-container |">
+      <div class="select-bank-label">
+        Select Bank:
+      </div>
+      <select name="" id="">
+        <option value="SBI">Select Bank</option>
+        <option value="SBI">SBI</option>
+      </select>
+    </div>
+    <div class="payment-gateway-button">
+      <button type="button">Back</button>
+      <button type="button">Make Payment</button>
+      <button type="button">Replan</button>
+    </div>
+  </div>
+  <br>
+<ul class="leftkaro">
+  <li>After successful payment and booking of accommodations, the User is shown the ticket confirmation details along with a “Print Reservation Slip” Button. On clicking the button ERS is shown with an option to print.</li>
+  <li>The customer can subsequently also print Electronic Reservation Slip from the 'BOOKED TICKETS' link on the left navigation bar.</li>
+</ul>
+
+<div class="ticket-details-notice">
+  Congratulations! You have successfully booked a ticket. Please print the ERS and carry it along with a relevant photo ID card while traveling.
+</div>
+
+
+<div class="ticket-details-container">
+  <div class="ticket-details-heading">Ticket Details</div>
+  <div class="ticket-details-content">
+      <div class="ticket-details-container-col">
+          <div><span>Transaction ID: </span> 20000001048272</div>
+          <div><span>Date of Booking: </span> 24-Jan-2014</div>
+          <div><span>Date of Journey: </span> 30-Jan-2014</div>
+          <div><span>Boarding At: </span> NDLS</div>
+          <div><span>Distance: </span> 1384 KM</div>
+          <div><span>Total Face: </span> Rs 1815 </div>
+      </div>
+
+      <div class="ticket-details-container-col">
+          <div><span>PNR No: </span> 20000001048272</div>
+          <div><span>Class: </span> Third AC</div>
+          <div><span>From: </span> NDLS </div>
+          <div><span>Date of Boarding: </span> 30-Jan-2014</div>
+          <div><span>Schedule & Departure: </span> 16:30</div>
+          <div><span>Adult: </span> 1 </div>
+      </div>
+
+      <div class="ticket-details-container-col">
+          <div><span>Train No .Name : </span> 12592 / NSDL to RNC</div>
+          <div><span>Quota: </span> General</div>
+          <div><span>To: </span> BCT </div>
+          <div><span>Reservation Upto: </span> BCT</div>
+          <div><span>Schedule & Arrival: </span> 31-JAN-2014</div>
+      </div> 
+  </div>
+</div>
+
+<div class="Details-of-passenger-container">
+  <div class="details-of-passenger-heading">
+      Details of passengers
+  </div>
+<br>
+  <table class="borderdedo">
+      <tr >
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Meal</th>
+          <th>Concession</th>
+          <th>Status</th>
+          <th>Coach</th>
+          <th>Seat/Berth/ WL No</th>
+          <th>Current Status</th>
+      </tr>
+      <tr >
+          <td>1</td>
+          <td>Ashis</td>
+          <td>32</td>
+          <td>Male</td>
+          <td>Veg</td>
+          <td></td>
+          <td>CNF</td>
+          <td>B3</td>
+          <td>65(LB)</td>
+          <td>CNF</td>
+      </tr>  
+  </table>
+
+  <div class="print-button">
+      <button>Print ERS(English)</button>
+      <button>Print ERS(Hindi)</button>
+  </div>
+
+  <div class="Book-another-ticket">
+      <button>Book return Ticket</button>
+      <button>Book Another Ticket</button>
+  </div>
+</div>
+<img src="ss.png">
+</body>
+</html>
