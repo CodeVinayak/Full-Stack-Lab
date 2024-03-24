@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div  id="Myinfo">
+        <p><b>Name :</b> Vinayak Kumar Singh</p>
+        <p><b>Register No :</b> 23MCA1030 </p>
+    </div>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <button onclick="appendTo('7')">7</button>
+        <button onclick="appendTo('8')">8</button>
+        <button onclick="appendTo('9')">9</button>
+        <button onclick="appendTo('+')">+</button>
+        <button onclick="appendTo('^')">^</button>
+        <button onclick="appendTo('4')">4</button>
+        <button onclick="appendTo('5')">5</button>
+        <button onclick="appendTo('6')">6</button>
+        <button onclick="appendTo('-')">-</button>
+        <button onclick="appendTo('ln')">ln</button>
+        <button onclick="appendTo('1')">1</button>
+        <button onclick="appendTo('2')">2</button>
+        <button onclick="appendTo('3')">3</button>
+        <button onclick="appendTo('*')">*</button>
+        <button onclick="appendTo('log')">log</button>
+        <button onclick="appendTo('0')">0</button>
+        <button onclick="appendTo('.')">.</button>
+        <button onclick="clearDisplay()">Clear</button>
+        <button onclick="appendTo('/')">/</button>
+        <button id="Result" onclick="calculate()">=</button>
+    </div>
+
+<script>
+    function appendTo(value) {
+            var display = document.getElementById("display");
+            display.value += value;
+    }
+        
+    function clearDisplay() {
+        document.getElementById("display").value = "";
+    }
+        
+    function calculate() {
+    var expression = document.getElementById("display").value;
+    var result = eval(expression);
+    document.getElementById("display").value = result;
+    }
+
+    document.getElementById("display").addEventListener("keypress", function(event) {
+    if (event.key === '.' || (event.key >= '0' && event.key <= '9')) {
+        appendTo(event.key);
+    } else if (['+', '-', '*', '/', '^', 'Enter'].includes(event.key)) {
+        appendTo(event.key);
+    }  
+    if (event.key === 'Enter') {
+        calculate();
+    }
+});
+</script>
+</body>
+</html>
