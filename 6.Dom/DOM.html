@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play Area Queue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+        b {
+            font-size: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+        #queue_display {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Play Area Queue</h1>
+    <b>Name:</b> Vinayak Kumar Singh
+    <br><br>
+    <b>Register No:</b> 23MCA1030
+    <br><br>
+    <input type="text" id="childName" placeholder="Enter Child Name">
+    <br><br>
+    <button onclick="addToQueue()">Enter</button>
+    <button onclick="exitQueue()">Exit</button>
+    <h3 id="queueDisplay"></h3>
+
+    <script>
+        let queue = [];
+
+        function addToQueue() {
+            const childNameInput = document.getElementById("childName");
+            const name = childNameInput.value.trim();
+
+            if (name !== "") {
+                queue.push(name);
+                updateQueueDisplay();
+                childNameInput.value = "";
+            }
+        }
+
+        function exitQueue() {
+            if (queue.length > 0) {
+                queue.shift();
+                updateQueueDisplay();
+            }
+        }
+
+        function updateQueueDisplay() {
+            const queueDisplay = document.getElementById("queueDisplay");
+            queueDisplay.textContent = "Queue: " + queue.join(", ");
+        }
+    </script>
+</body>
+</html>
