@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Simple Interest</title>
+    </head>
+<body>
+<h1>Simple Interest</h1>
+
+<script>
+    function calulateinterest()
+    {
+        let PrincipalAmount=prompt("Enter the Principal Amount ");
+        let InterestRate=prompt("Enter the interest rate (%): ");
+        let time=prompt("Enter the time duration in years: ");
+
+        let SimpleInterest=(PrincipalAmount*InterestRate*time)/100;
+
+        document.write("Principal Amount is "+PrincipalAmount);
+        document.write("<br>InterestRate is : "+InterestRate);
+        document.write("<br>Time Duration in year : "+time);
+        document.write("<br>Simple Interest is "+SimpleInterest);
+    }
+    calulateinterest();
+</script>
+</body>
+</html>

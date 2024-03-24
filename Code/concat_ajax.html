@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" name="one" placeholder="FirstName">
+        <input type="text" name="two" placeholder="LastName">
+        <input type="text" name="three" placeholder="ConcatData">
+        <button type="button" onclick="handleDisplay()">Concat</button>
+    </form>
+</body>
+<script>
+    function handleDisplay() {
+        const req = new XMLHttpRequest();
+        req.open("POST", "adders.php");
+        const myForm = document.getElementById("form");
+        const formData = new FormData(myForm);
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                document.getElementsByName("three")[0].value =
+                    this.responseText;
+            }
+        }
+        req.send(formData);
+    }
+</script>
+</html>
+<!-- 
+    <?php
+$a = $_POST['one'];
+$b = $_POST['two'];
+$c = $a. $b;
+echo $c;
+?> 
+-->

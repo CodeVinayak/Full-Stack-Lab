@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>BinarySearch</title>
+</head>
+
+<body>
+    <h1>BinarySearch</h1>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let target = prompt("Enter the value to search in array");
+
+        function binarysearch(arr, target) {
+            let leftindex = 0;
+            let rightindex = arr.length - 1;
+
+            while (leftindex <= rightindex) {
+                let middleindex = Math.floor((leftindex + rightindex) / 2);
+
+                if (target === arr[middleindex]) {
+                    document.write("Input value is found at index " + middleindex);
+                    return;
+                }
+                if (target < arr[middleindex]) {
+                    rightindex = middleindex - 1;
+                } else {
+                    leftindex = middleindex + 1;
+                }
+            }
+            document.write("Input value is not found in array")
+        }
+        binarysearch(arr, parseInt(target));
+    </script>
+</body>
+
+</html>

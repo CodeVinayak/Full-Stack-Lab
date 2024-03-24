@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>ColorChanges</title>
+    </head>
+    <style>
+        body{
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <h1>Hello Vinayak in Blue</h1>
+        <button type="submit" onclick="changecolorandtext()" id="btn"> Click Me</button>
+        <script>
+            function changecolorandtext()
+            {
+                document.body.style.backgroundColor = "red"; 
+                document.querySelector('h1').innerText="Hello Vinayak in Red";
+            }
+        </script>
+    </body>
+</html>
