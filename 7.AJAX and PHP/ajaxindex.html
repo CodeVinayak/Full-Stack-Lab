@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Concatenation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .textbox {
+            width:80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        #fetchName {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #fetchName:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Name Concatenation</h2>
+        <b>Name:</b> Vinayak Kumar Singh
+        <br><br>
+        <b>Register No:</b> 23MCA1030
+        <br><br>
+        <label class="label" for="firstName">First Name:</label>
+        <input type="text" id="firstName" class="textbox"><br>
+
+        <label class="label" for="lastName">Last Name:</label>
+        <input type="text" id="lastName" class="textbox"><br>
+
+        <label class="label" for="concatenatedName">Concatenated Name:</label>
+        <input type="text" id="concatenatedName" class="textbox" ><br>
+
+        <button id="fetchName">Fetch Name</button>
+    </div>
+
+    <script>
+        document.getElementById("fetchName").addEventListener("click", function () {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:8080/fetchName.php", true);
+
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var concatenatedName = xhr.responseText;
+                    document.getElementById("concatenatedName").value = concatenatedName;
+                }
+            };
+
+            var data = "firstName=" + encodeURIComponent(firstName) + "&lastName=" + encodeURIComponent(lastName);
+            xhr.send(data);
+        });
+    </script>
+</body>
+
+</html>
